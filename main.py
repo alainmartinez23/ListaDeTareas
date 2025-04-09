@@ -161,7 +161,8 @@ def menu():
     2. Añadir una nueva tarea
     3. Eliminar una tarea
     4. Mostrar las tareas de una categoría
-    5. Salir''')
+    5. Añadir una nueva categoría
+    6. Salir''')
 
 while True:
     menu()
@@ -179,8 +180,12 @@ while True:
 
     elif opcion == "4":
         mostrar_tareas_por_categoria()
-
+    
     elif opcion == "5":
+        nueva = input("Título de la nueva categoria que quieres añadir: ")
+        nueva_categoria(nueva)
+
+    elif opcion == "6":
         print("Hasta la próxima!!!")
         break
 
